@@ -1,7 +1,6 @@
 'use client';
 
-import { useState } from 'react';
-
+import { useState } from 'react'; // 'react' should be lowercase
 
 const Hello = () => {
   const [showConfetti, setShowConfetti] = useState(false);
@@ -29,7 +28,7 @@ const Hello = () => {
         {stage === 1 && <h1 className="text-4xl font-bold text-pink-700">Hello World</h1>}
         {stage === 2 && <h1 className="text-4xl font-bold text-pink-700">With Next.js</h1>}
         {stage === 3 && <h1 className="text-4xl font-bold text-pink-700">By Aqsa Shah</h1>}
-        
+
         <button
           onClick={handleCelebrateClick}
           className="mt-6 bg-pink-700 text-white py-2 px-4 rounded hover:bg-pink-600"
